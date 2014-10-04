@@ -48,7 +48,7 @@ Each of the sixteen objects list the week number, calculated ratchet level, and 
 
 ###Semester Statistics Object Parameters
 Each of the three objects list the overall ratchet level and keyword counts for the entire semester.
-* `semester`: Semester (`sp13` / `au14` / `sp14` )
+* `semester`: Semester (`sp13` / `au14` / `sp14`)
 * `ratchetLevelOverall`: Overall averaged ratchet level for the semester.
 * `turnupCount`: Number of occurrences in semester.
 * `turntCount`: Number of occurrences in semester.
