@@ -1,48 +1,61 @@
-		body { 
-			background-color:white;
-			position: fixed; 
-		}
+body { 
+	background-color:white;
+}
 		
+#side {
+	background-color: palegreen;
+	width: 230px; 
+	height: 100%; 
+	position: fixed; 
+	float:left;
+	padding: 20px;
+	margin-top:-10px;
+	left: 0px;
+}
 		
-		#side {
-			background-color: palegreen;
-			width: 230px; 
-			height: 100%; 
-			position: fixed; 
-			float:left;
-			padding: 20px;
-		 	margin-top:-10px;
-			left: 0px;
-		}
+#side .title {
+	font-family: "Casual Affair"; 
+	font-size: 30px;
+	text-align: center; 
+	padding: 10px; 
+}
 		
-		#side .title {
-			font-family: "Casual Affair"; 
-			font-size: 30px;
-			text-align: center; 
-			padding: 10px; 
-			
-		}
+#side .description {
+	background-color: mistyrose;
+	color: black; 
+	font-size: 10px;  
+	width: 230px; 
+} 
 		
-		#side .description {
-			background-color: mistyrose;
-			color: black; 
-			font-size: 10px;  
-			width: 230px; 
-		} 
+#side .links {
+	background-color: mistyrose; 
+	color: black; 
+	font-size: 12px; 
+	font-family: "Casual Affair"; 
+	text-align: center; 
+	margin: 2px; 
+}
 		
-		#side .links {
-			background-color: mistyrose; 
-			color: black; 
-			font-size: 12px; 
-			font-family: "Casual Affair"; 
-			text-align: center; 
-			margin: 2px; 
-		}
+#main {
+	background-color: white;
+	padding-left: 280px;
+	text-align: center; 
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid;
+}
 		
-		a:link{ 
-			text-decoration: none;
-		}
+#main .title {
+	font-family: "Casual Affair"; 
+	font-size: 30px;
+	text-align: center; 
+	padding: 10px;
+}
 		
-		#side .links:hover {
-			background-color: white;
-		}
+a:link{ 
+	text-decoration: none;
+}
+		
+#side .links:hover {
+	background-color: white;
+}
