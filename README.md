@@ -4,61 +4,79 @@ OSURatchetMeter
 ##JSON Objects & Parameters
 
 ###List of JSON Arrays:
-* `sp13`: Array of week objects.
-* `au13`: Array of week objects.
-* `sp14`: Array of week objects.
-
-###Week Objects List
-* `ratchetLevelOverall`: The average ratchet level for the entire semester.
-* `ratchetLevelWeek1`: The ratchet level for weekend #1 of the semester.
-* `ratchetLevelWeek2`: The ratchet level for weekend #2 of the semester.
-* `ratchetLevelWeek3`: The ratchet level for weekend #3 of the semester.
-* `ratchetLevelWeek4`: The ratchet level for weekend #4 of the semester.
-* `ratchetLevelWeek5`: The ratchet level for weekend #5 of the semester.
-* `ratchetLevelWeek6`: The ratchet level for weekend #6 of the semester.
-* `ratchetLevelWeek7`: The ratchet level for weekend #7 of the semester.
-* `ratchetLevelWeek8`: The ratchet level for weekend #8 of the semester.
-* `ratchetLevelWeek9`: The ratchet level for weekend #9 of the semester.
-* `ratchetLevelWeek10`: The ratchet level for weekend #10 of the semester.
-* `ratchetLevelWeek11`: The ratchet level for weekend #11 of the semester.
-* `ratchetLevelWeek12`: The ratchet level for weekend #12 of the semester.
-* `ratchetLevelWeek13`: The ratchet level for weekend #13 of the semester.
-* `ratchetLevelWeek14`: The ratchet level for weekend #14 of the semester.
-* `ratchetLevelWeek15`: The ratchet level for weekend #15 of the semester.
-* `ratchetLevelWeek16`: The ratchet level for weekend #16 of the semester.
+* `sp13`: Array of week objects for Spring 2013.
+* `au13`: Array of week objects for Autumn 2013.
+* `sp14`: Array of week objects for Spring 2014.
+* `statistics`: Array of semester objects for each semester. 
 
 ####Week Object Parameters
-* `weekNumber`: Number of occurances.
-* `turnup`: Number of occurances.
-* `turnt`: Number of occurances.
-* `turnttt`: Number of occurances.
-* `ratchet`: Number of occurances.
-* `drunk`: Number of occurances.
-* `crunk`: Number of occurances.
-* `wasted`: Number of occurances.
-* `blackout drunk`: Number of occurances.
-* `blacked out`: Number of occurances.
-* `alcohol`: Number of occurances.
-* `fuck`: Number of occurances.
-* `fuckkk`: Number of occurances.
-* `fucked`: Number of occurances.
-* `booze`: Number of occurances.
-* `beer`: Number of occurances.
-* `smashed`: Number of occurances.
-* `drunkatOSU`: Number of occurances.
-* `party`: Number of occurances.
-* `partying`: Number of occurances.
-* `partied`: Number of occurances.
-* `tgif`: Number of occurances.
-* `bang`: Number of occurances.
-* `banging`: Number of occurances.
-* `banged`: Number of occurances.
-* `sex`: Number of occurances.
-* `puke`: Number of occurances.
-* `puked`: Number of occurances.
-* `puking`: Number of occurances.
-* `drunk text`: Number of occurances.
-* `drunk texting`: Number of occurances.
-* `laid`: Number of occurances.
-* `yolo`: Number of occurances.
-* `no fucks`: Number of occurances.
+* `weekNumber`: Number of the week in the semester (`1` - `16`).
+* `turnup`: Number of occurrences during weekend.
+* `turnt`: Number of occurrences during weekend.
+* `turnttt`: Number of occurrences during weekend.
+* `ratchet`: Number of occurrences during weekend.
+* `drunk`: Number of occurrences during weekend.
+* `crunk`: Number of occurrences during weekend.
+* `wasted`: Number of occurrences during weekend.
+* `blackout drunk`: Number of occurrences during weekend.
+* `blacked out`: Number of occurrences during weekend.
+* `alcohol`: Number of occurrences during weekend.
+* `fuck`: Number of occurrences during weekend.
+* `fuckkk`: Number of occurrences during weekend.
+* `fucked`: Number of occurrences during weekend.
+* `booze`: Number of occurrences during weekend.
+* `beer`: Number of occurrences during weekend.
+* `smashed`: Number of occurrences during weekend.
+* `drunkatOSU`: Number of occurrences during weekend.
+* `party`: Number of occurrences during weekend.
+* `partying`: Number of occurrences during weekend.
+* `partied`: Number of occurrences during weekend.
+* `tgif`: Number of occurrences during weekend.
+* `bang`: Number of occurrences during weekend.
+* `banging`: Number of occurrences during weekend.
+* `banged`: Number of occurrences during weekend.
+* `sex`: Number of occurrences during weekend.
+* `puke`: Number of occurrences during weekend.
+* `puked`: Number of occurrences during weekend.
+* `puking`: Number of occurrences during weekend.
+* `drunk text`: Number of occurrences during weekend.
+* `drunk texting`: Number of occurrences during weekend.
+* `laid`: Number of occurrences during weekend.
+* `yolo`: Number of occurrences during weekend.
+* `no fucks`: Number of occurrences during weekend.
+
+###Semester Object Parameters
+* `semester`: Semester (`sp13` / `au14` / `sp14` )
+* `turnup`: Number of occurrences in semester.
+* `turnt`: Number of occurrences in semester.
+* `turnttt`: Number of occurrences in semester.
+* `ratchet`: Number of occurrences in semester.
+* `drunk`: Number of occurrences in semester.
+* `crunk`: Number of occurrences in semester.
+* `wasted`: Number of occurrences in semester.
+* `blackout drunk`: Number of occurrences in semester.
+* `blacked out`: Number of occurrences in semester.
+* `alcohol`: Number of occurrences in semester.
+* `fuck`: Number of occurrences in semester.
+* `fuckkk`: Number of occurrences in semester.
+* `fucked`: Number of occurrences in semester.
+* `booze`: Number of occurrences in semester.
+* `beer`: Number of occurrences in semester.
+* `smashed`: Number of occurrences in semester.
+* `drunkatOSU`: Number of occurrences in semester.
+* `party`: Number of occurrences in semester.
+* `partying`: Number of occurrences in semester.
+* `partied`: Number of occurrences in semester.
+* `tgif`: Number of occurrences in semester.
+* `bang`: Number of occurrences in semester.
+* `banging`: Number of occurrences in semester.
+* `banged`: Number of occurrences in semester.
+* `sex`: Number of occurrences in semester.
+* `puke`: Number of occurrences in semester.
+* `puked`: Number of occurrences in semester.
+* `puking`: Number of occurrences in semester.
+* `drunk text`: Number of occurrences in semester.
+* `drunk texting`: Number of occurrences in semester.
+* `laid`: Number of occurrences in semester.
+* `yolo`: Number of occurrences in semester.
+* `no fucks`: Number of occurrences in semester.
