@@ -13,14 +13,14 @@ OAUTH_TOKEN_SECRET = '***'
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET) ## Get Twitter Object
 
 
-def ListRemoveDups(list):
+def ListRemoveDups(list): ## Finds Dups in a list
   seen = []
   for item in list:
     if item not in seen:
       seen.append(item)
   return seen
 
-def GetUsersByQuery(twitter, query):
+def GetUsersByQuery(twitter, query): ## Returns a twitter users by query
   UserList = []
 
   Response = twitter.search(q=query, count=100)
@@ -33,14 +33,14 @@ def GetUsersByQuery(twitter, query):
     UserList.append(ScreenName)
   return UserList
 
-SearchKeywords = ['OSUCrush','TheFakeLantern', 'Brutus_Buckeye', 'BuckeyeNation', 'BuckeyeCrushes', 'TBDBITL', 'FakeUrban']
+SearchKeywords = ['OSUCrush','TheFakeLantern', 'Brutus_Buckeye', 'BuckeyeNation', 'BuckeyeCrushes', 'TBDBITL', 'FakeUrban'] ## Keywords to find Probable OSU Students
 OSUStudents = []
-for Keyword in SearchKeywords:
+for Keyword in SearchKeywords: ## Iterates thru all keywords
   OSUStudents = OSUStudents + GetUsersByQuery(twitter, Keyword)
 
-OSUStudents = ListRemoveDups(OSUStudents)
+OSUStudents = ListRemoveDups(OSUStudents) ## Remove dups
 
-
+## Dumps all users to file
 stud_list = open('./osu_students.txt', 'w')
 for user in OSUStudents:
   stud_list.write(user + '\n')
