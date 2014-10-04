@@ -19,8 +19,8 @@ OSURatchetMeter
 * `drunkCount`: Number of occurrences during weekend.
 * `crunkCount`: Number of occurrences during weekend.
 * `wastedCount`: Number of occurrences during weekend.
-* `blackout drunkCount`: Number of occurrences during weekend.
-* `blacked outCount`: Number of occurrences during weekend.
+* `blackout_drunkCount`: Number of occurrences during weekend.
+* `blacked_outCount`: Number of occurrences during weekend.
 * `alcoholCount`: Number of occurrences during weekend.
 * `fuckCount`: Number of occurrences during weekend.
 * `fuckkkCount`: Number of occurrences during weekend.
@@ -40,11 +40,11 @@ OSURatchetMeter
 * `pukeCount`: Number of occurrences during weekend.
 * `pukedCount`: Number of occurrences during weekend.
 * `pukingCount`: Number of occurrences during weekend.
-* `drunk textCount`: Number of occurrences during weekend.
-* `drunk textingCount`: Number of occurrences during weekend.
+* `drunk_textCount`: Number of occurrences during weekend.
+* `drunk_textingCount`: Number of occurrences during weekend.
 * `laidCount`: Number of occurrences during weekend.
 * `yoloCount`: Number of occurrences during weekend.
-* `no fucksCount`: Number of occurrences during weekend.
+* `no_fucksCount`: Number of occurrences during weekend.
 
 ###Semester Statistics Object Parameters
 * `semester`: Semester (`sp13` / `au14` / `sp14` )
@@ -56,8 +56,8 @@ OSURatchetMeter
 * `drunkCount`: Number of occurrences in semester.
 * `crunkCount`: Number of occurrences in semester.
 * `wastedCount`: Number of occurrences in semester.
-* `blackout drunkCount`: Number of occurrences in semester.
-* `blacked outCount`: Number of occurrences in semester.
+* `blackout_drunkCount`: Number of occurrences in semester.
+* `blacked_outCount`: Number of occurrences in semester.
 * `alcoholCount`: Number of occurrences in semester.
 * `fuckCount`: Number of occurrences in semester.
 * `fuckkkCount`: Number of occurrences in semester.
