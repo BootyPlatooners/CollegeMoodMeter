@@ -21,9 +21,7 @@ namespace RatchetMeter
 {
     public partial class Form1 : Form
     {
-        List<WeekStatistics> WeekListSp13 { get; set; }
-        List<WeekStatistics> WeekListAu13 { get; set; }
-        List<WeekStatistics> WeekListSp14 { get; set; }
+        List<WeekStatistics> WeekList { get; set; }
         List<WeekStatistics> Statistics { get; set; }
 
         public Form1()
@@ -84,7 +82,7 @@ namespace RatchetMeter
                 {
                     var jsonURLSp13 = await client.GetAsync(new Uri("URL"));
                     string responseSp13 = await jsonURLSp13.Content.ReadAsStringAsync();
-                    convertAndOutput(responseSp13);
+                    convertAndOutput("Spring 2013", responseSp13);
                 }
 
                 // Grab JSON strings from URL for Au13:
@@ -92,7 +90,7 @@ namespace RatchetMeter
                 {
                     var jsonURLAu13 = await client.GetAsync(new Uri("URL"));
                     string responseAu13 = await jsonURLAu13.Content.ReadAsStringAsync();
-                    convertAndOutput(responseAu13);
+                    convertAndOutput("Autumn 2013", responseAu13);
                 }
 
                 // Grab JSON strings from URL for Sp14:
@@ -100,7 +98,7 @@ namespace RatchetMeter
                 {
                     var jsonURLSp14 = await client.GetAsync(new Uri("URL"));
                     string responseSp14 = await jsonURLSp14.Content.ReadAsStringAsync();
-                    convertAndOutput(responseSp14);
+                    convertAndOutput("Spring 2014", responseSp14);
                 }
 
                 // Grab JSON strings from URL for total statistics:
@@ -114,29 +112,52 @@ namespace RatchetMeter
             }
         }
 
-        public void convertAndOutput(string jsonResult)
+        public void convertAndOutput(string semester, string jsonResult)
         {
             // Deserialize objects:
-            WeekListSp13 = JsonConvert.DeserializeObject<List<WeekStatistics>>(jsonResult);
-            WeekStatistics week1Sp13 = WeekListSp13[0];
-            WeekStatistics week2Sp13 = WeekListSp13[1];
-            WeekStatistics week3Sp13 = WeekListSp13[2];
-            WeekStatistics week4Sp13 = WeekListSp13[3];
-            WeekStatistics week5Sp13 = WeekListSp13[4];
-            WeekStatistics week6Sp13 = WeekListSp13[5];
-            WeekStatistics week7Sp13 = WeekListSp13[6];
-            WeekStatistics week8Sp13 = WeekListSp13[7];
-            WeekStatistics week9Sp13 = WeekListSp13[8];
-            WeekStatistics week10Sp13 = WeekListSp13[9];
-            WeekStatistics week11Sp13 = WeekListSp13[10];
-            WeekStatistics week12Sp13 = WeekListSp13[11];
-            WeekStatistics week13Sp13 = WeekListSp13[12];
-            WeekStatistics week14Sp13 = WeekListSp13[13];
-            WeekStatistics week15Sp13 = WeekListSp13[14];
-            WeekStatistics week16Sp13 = WeekListSp13[15];
+            WeekList = JsonConvert.DeserializeObject<List<WeekStatistics>>(jsonResult);
+            WeekStatistics week1 = WeekList[0];
+            WeekStatistics week2 = WeekList[1];
+            WeekStatistics week3 = WeekList[2];
+            WeekStatistics week4 = WeekList[3];
+            WeekStatistics week5 = WeekList[4];
+            WeekStatistics week6 = WeekList[5];
+            WeekStatistics week7 = WeekList[6];
+            WeekStatistics week8 = WeekList[7];
+            WeekStatistics week9 = WeekList[8];
+            WeekStatistics week10 = WeekList[9];
+            WeekStatistics week11 = WeekList[10];
+            WeekStatistics week12 = WeekList[11];
+            WeekStatistics week13 = WeekList[12];
+            WeekStatistics week14 = WeekList[13];
+            WeekStatistics week15 = WeekList[14];
+            WeekStatistics week16 = WeekList[15];
+
+            string[] outputCode = {"<!DOCTYPE html>\r\n",
+                                  "<html lang=\"en\">",
+                                  "<head>",
+                                  "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githubusercontent.com/OHIOhackathon2014/OSURatchetMeter/master/css/style.css?token=7636606__eyJzY29wZSI6IlJhd0Jsb2I6T0hJT2hhY2thdGhvbjIwMTQvT1NVUmF0Y2hldE1ldGVyL21hc3Rlci9jc3Mvc3R5bGUuY3NzIiwiZXhwaXJlcyI6MTQxMzAyNDczOX0%3D--3fee47675b5dc317f2927cc15ae34d4dd449bf1f\">",
+                                  "</head>",
+                                  "<body>",
+                                  "<div id = \"side\">",
+                                  "<div class = \"title\">",
+                                  semester,
+                                  "</div>",
+                                  "<div class = \"description\">",
+                                  "Welcome to Ohio State's Ratchet Meter - a Twitter program that analyzes tweets by Ohio State students over a period of time to determine the most fun, rowdy, and debaucherous weekends.",
+                                  "</div>",
+                                  "<br>"};
+
+                                  "<a href=\"" + "C:\\Users\\Kayvan\\Desktop" + "\"><div class =\"links\">Facebook</div></a>",
+
+                                  
+                                  
+                                  
+                                  };
 
 
+
+            System.IO.File.AppendAllLines(@"C:\Users\Kayvan\Desktop\Output.html", "string");
         }
-
     }
 }
