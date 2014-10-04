@@ -9,7 +9,8 @@ OSURatchetMeter
 * `sp14`: Array of Week Statistics Objects for Spring 2014.
 * `statistics`: Array of Semester Statisticss Objects for each semester. 
 
-###Week Object Parameters
+###Week Statistics Object Parameters
+Each of the sixteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
 * `weekNumberCount`: Number of the week in the semester (`1` - `16`).
 * `ratchetLevelWeek`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences during weekend.
@@ -39,8 +40,9 @@ OSURatchetMeter
 * `yoloCount`: Number of occurrences during weekend.
 
 ###Semester Statistics Object Parameters
-* `weekNumberCount`: Number of the week in the semester (`1` - `16`).
-* `ratchetLevelWeek`: Level of ratchetness during the weekend.
+Each of the three objects list the overall ratchet level and keyword counts for the entire semester.
+* `semester`: Semester (`sp13` / `au14` / `sp14` )
+* `ratchetLevelOverall`: Overall averaged ratchet level for the semester.
 * `turnupCount`: Number of occurrences in semester.
 * `turntCount`: Number of occurrences in semester.
 * `turntttCount`: Number of occurrences in semester.
