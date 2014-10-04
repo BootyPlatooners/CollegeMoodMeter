@@ -22,9 +22,6 @@ OSURatchetMeter
 * `blackout_drunkCount`: Number of occurrences during weekend.
 * `blacked_outCount`: Number of occurrences during weekend.
 * `alcoholCount`: Number of occurrences during weekend.
-* `fuckCount`: Number of occurrences during weekend.
-* `fuckkkCount`: Number of occurrences during weekend.
-* `fuckedCount`: Number of occurrences during weekend.
 * `boozeCount`: Number of occurrences during weekend.
 * `beerCount`: Number of occurrences during weekend.
 * `smashedCount`: Number of occurrences during weekend.
@@ -33,10 +30,6 @@ OSURatchetMeter
 * `partyingCount`: Number of occurrences during weekend.
 * `partiedCount`: Number of occurrences during weekend.
 * `tgifCount`: Number of occurrences during weekend.
-* `bangCount`: Number of occurrences during weekend.
-* `bangingCount`: Number of occurrences during weekend.
-* `bangedCount`: Number of occurrences during weekend.
-* `sexCount`: Number of occurrences during weekend.
 * `pukeCount`: Number of occurrences during weekend.
 * `pukedCount`: Number of occurrences during weekend.
 * `pukingCount`: Number of occurrences during weekend.
@@ -44,11 +37,10 @@ OSURatchetMeter
 * `drunk_textingCount`: Number of occurrences during weekend.
 * `laidCount`: Number of occurrences during weekend.
 * `yoloCount`: Number of occurrences during weekend.
-* `no_fucksCount`: Number of occurrences during weekend.
 
 ###Semester Statistics Object Parameters
-* `semester`: Semester (`sp13` / `au14` / `sp14` )
-* `ratchetLevelOverall`: Average level of ratchetness throughout the semester's weekends.
+* `weekNumberCount`: Number of the week in the semester (`1` - `16`).
+* `ratchetLevelWeek`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences in semester.
 * `turntCount`: Number of occurrences in semester.
 * `turntttCount`: Number of occurrences in semester.
@@ -59,9 +51,6 @@ OSURatchetMeter
 * `blackout_drunkCount`: Number of occurrences in semester.
 * `blacked_outCount`: Number of occurrences in semester.
 * `alcoholCount`: Number of occurrences in semester.
-* `fuckCount`: Number of occurrences in semester.
-* `fuckkkCount`: Number of occurrences in semester.
-* `fuckedCount`: Number of occurrences in semester.
 * `boozeCount`: Number of occurrences in semester.
 * `beerCount`: Number of occurrences in semester.
 * `smashedCount`: Number of occurrences in semester.
@@ -70,10 +59,6 @@ OSURatchetMeter
 * `partyingCount`: Number of occurrences in semester.
 * `partiedCount`: Number of occurrences in semester.
 * `tgifCount`: Number of occurrences in semester.
-* `bangCount`: Number of occurrences in semester.
-* `bangingCount`: Number of occurrences in semester.
-* `bangedCount`: Number of occurrences in semester.
-* `sexCount`: Number of occurrences in semester.
 * `pukeCount`: Number of occurrences in semester.
 * `pukedCount`: Number of occurrences in semester.
 * `pukingCount`: Number of occurrences in semester.
@@ -81,4 +66,3 @@ OSURatchetMeter
 * `drunk_textingCount`: Number of occurrences in semester.
 * `laidCount`: Number of occurrences in semester.
 * `yoloCount`: Number of occurrences in semester.
-* `no_fucksCount`: Number of occurrences in semester.
