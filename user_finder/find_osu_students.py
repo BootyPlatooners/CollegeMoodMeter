@@ -4,11 +4,11 @@ from twython import Twython
 twitter = Twython()
 
 ## App Keys
-APP_KEY = '********'
-APP_SECRET = '*******'
+APP_KEY = '****'
+APP_SECRET = '****'
 ## User Keys
-OAUTH_TOKEN = '*******'
-OAUTH_TOKEN_SECRET = '*******'
+OAUTH_TOKEN = '**-**'
+OAUTH_TOKEN_SECRET = '***'
 
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET) ## Get Twitter Object
 
@@ -40,7 +40,8 @@ for Keyword in SearchKeywords:
 
 OSUStudents = ListRemoveDups(OSUStudents)
 
-i = 0
+
+stud_list = open('./osu_students.txt', 'w')
 for user in OSUStudents:
-  i += 1
-  print i, user
+  stud_list.write(user + '\n')
+stud_list.close()
