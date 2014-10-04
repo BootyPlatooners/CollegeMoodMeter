@@ -14,7 +14,7 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 * `sp13`: Array of Week Statistics Objects for Spring 2013.
 * `au13`: Array of Week Statistics Objects for Autumn 2013.
 * `sp14`: Array of Week Statistics Objects for Spring 2014.
-* `statistics`: Array of Semester Statisticss Objects for each semester. 
+* `statistics`: Array of Semester Statistics Objects for each semester. 
 
 ###Week Statistics Object Parameters
 Each of the sixteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
