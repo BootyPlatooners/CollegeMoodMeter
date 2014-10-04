@@ -19,7 +19,7 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 ###Week Statistics Object Parameters
 Each of the sixteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
 * `weekNumberCount`: Number of the week in the semester (`1` - `16`).
-* `ratchetLevelWeek`: Level of ratchetness during the weekend.
+* `ratchetLevel`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences during weekend.
 * `turntCount`: Number of occurrences during weekend.
 * `turntttCount`: Number of occurrences during weekend.
