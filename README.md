@@ -4,12 +4,12 @@ OSURatchetMeter
 ##JSON Objects & Parameters
 
 ###List of JSON Arrays:
-* `sp13`: Array of week objects for Spring 2013.
-* `au13`: Array of week objects for Autumn 2013.
-* `sp14`: Array of week objects for Spring 2014.
-* `statistics`: Array of semester objects for each semester. 
+* `sp13`: Array of Week Statistics Objects for Spring 2013.
+* `au13`: Array of Week Statistics Objects for Autumn 2013.
+* `sp14`: Array of Week Statistics Objects for Spring 2014.
+* `statistics`: Array of Semester Statisticss Objects for each semester. 
 
-####Week Object Parameters
+###Week Object Parameters
 * `weekNumberCount`: Number of the week in the semester (`1` - `16`).
 * `ratchetLevelWeek`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences during weekend.
@@ -46,7 +46,7 @@ OSURatchetMeter
 * `yoloCount`: Number of occurrences during weekend.
 * `no fucksCount`: Number of occurrences during weekend.
 
-###Semester Object Parameters
+###Semester Statistics Object Parameters
 * `semester`: Semester (`sp13` / `au14` / `sp14` )
 * `ratchetLevelOverall`: Average level of ratchetness throughout the semester's weekends.
 * `turnupCount`: Number of occurrences in semester.
