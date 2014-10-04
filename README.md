@@ -6,7 +6,7 @@ The OSU Ratchet Meter is a measurer of the 'ratchet' levels of Ohio State studen
 Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding mentions of particular keywords and account mentions. Then, a search for specific 'ratchet' keywords is done over the students' tweets over a specific semester. The number of occurences of these keywords per weekend are recorded, and a ratchet level is assigned to each weekend throughout the semester, along with a score for the semester as a whole.
 
 ##Keywords and Mentions to Identify Students
-`#newtoOSU` `@OhioUnion` `@OUAB`
+`#newtoOSU` `#osu18` `#osu17` `@OhioUnion` `@OUAB`
 
 ##JSON Objects & Parameters
 
