@@ -3,7 +3,7 @@ body {
 }
 		
 #side {
-	background-color: palegreen;
+	background-color: #E7E7E7;
 	width: 230px; 
 	height: 100%; 
 	position: fixed; 
@@ -21,14 +21,15 @@ body {
 }
 		
 #side .description {
-	background-color: mistyrose;
+	background-color: white;
 	color: black; 
-	font-size: 10px;  
-	width: 230px; 
+	font-size: 12px;  
+	width: 218px; 
+	padding: 5px;
 } 
 		
 #side .links {
-	background-color: mistyrose; 
+	background-color: white; 
 	color: black; 
 	font-size: 12px; 
 	font-family: "Casual Affair"; 
@@ -37,6 +38,7 @@ body {
 }
 		
 #main {
+	font-family: "Calibri";
 	background-color: white;
 	padding-left: 280px;
 	text-align: center; 
