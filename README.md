@@ -1,7 +1,7 @@
 OSURatchetMeter
 ===============
 
-The OSU Ratchet Meter is a measurer of the 'ratchet' levels of Ohio State students throughout the semester.
+Welcome to Ohio State's Ratchet Meter - a Twitter program that analyzes tweets by Ohio State students over a period of time to determine the most fun, rowdy, and debaucherous weekends out of each semester.
 
 Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions mostly used exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over the students' tweets over a specific semester. The number of occurences of these keywords per weekend are recorded, and a ratchet level is assigned to each of the fifteen weekends throughout the semester, along with a score for the semester as a whole.
 
