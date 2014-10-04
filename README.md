@@ -1,9 +1,9 @@
 OSURatchetMeter
 ===============
 
-The OSU Ratchet Meter is a measurer of the 'ratchet' levels of Ohio State students throughout the semester.
+Welcome to Ohio State's Ratchet Meter - a Twitter program that analyzes tweets by Ohio State students and fans over a period of time to determine the most fun, rowdy, and debaucherous weekends out of each semester.
 
-Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions mostly used exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over the students' tweets over a specific semester. The number of occurences of these keywords per weekend are recorded, and a ratchet level is assigned to each weekend throughout the semester, along with a score for the semester as a whole.
+Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions used most exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over these students' tweets, and the number of occurences of these keywords per weekend are recorded. Finally, using the extracted data, a ratchet level is assigned to each of the fifteen weekends throughout the semester, along with a score for the semester as a whole.
 
 ## Team Members
 - Kevin Payravi
@@ -20,19 +20,24 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
     + Graduating 2017
     + Computer Science & Engineering
 
-##Keywords and Mentions to Identify Students
-`#newtoOSU` `#osu18` `#osu17` `@OhioUnion` `@OUAB`
+## Identifying Students: Keywords and Mentions
+Twitter's search API is limited to tweets from the last week. In order to compile a list of students, any users mentioning one of the following OSU-related accounts or hashtags is assumed to be an OSU student.
+
+`#BuckeyeNation` `@OhioUnion` `@OUAB` `@OSUCrush` `@BuckeyeCrushes` `@TBDBITL` `@FakeUrban` `@TheFakeLantern` `@Brutus_Buckeye`
+
+## Getting Ratchet Levels: Keywords
+`turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo` 
 
 ##JSON Objects & Parameters
 
 ###List of JSON Arrays:
-* `sp13`: Array of Week Statistics Objects for Spring 2013.
-* `au13`: Array of Week Statistics Objects for Autumn 2013.
-* `sp14`: Array of Week Statistics Objects for Spring 2014.
-* `statistics`: Array of Semester Statistics Objects for each semester. 
+* `sp13`: Array of fifteen Week Statistics objects for Spring 2013.
+* `au13`: Array of fifteen Week Statistics objects for Autumn 2013.
+* `sp14`: Array of fifteen Week Statistics objects for Spring 2014.
+* `statistics`: Array of Semester Statistics objects for each semester. 
 
 ###Week Statistics Object Parameters
-Each of the sixteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
+Each of the fifteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
 * `weekNumberCount`: Number of the week in the semester (`1` - `16`).
 * `ratchetLevel`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences during weekend.
