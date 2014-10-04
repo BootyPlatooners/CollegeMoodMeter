@@ -1,7 +1,7 @@
 OSURatchetMeter
 ===============
 
-Welcome to Ohio State's Ratchet Meter - a Twitter program that analyzes tweets by Ohio State students over a period of time to determine the most fun, rowdy, and debaucherous weekends out of each semester.
+Welcome to Ohio State's Ratchet Meter - a Twitter program that analyzes tweets by Ohio State students and fans over a period of time to determine the most fun, rowdy, and debaucherous weekends out of each semester.
 
 Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions used most exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over these students' tweets, and the number of occurences of these keywords per weekend are recorded. Finally, using the extracted data, a ratchet level is assigned to each of the fifteen weekends throughout the semester, along with a score for the semester as a whole.
 
@@ -23,7 +23,7 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 ## Identifying Students: Keywords and Mentions
 Twitter's search API is limited to tweets from the last week. In order to compile a list of students, any users mentioning one of the following OSU-related accounts or hashtags is assumed to be an OSU student.
 
-`#newtoOSU` `#osu18` `#BuckeyeNation` `@OhioUnion` `@OUAB` `@OSUCrush` `@TheFakeLantern` `@Brutus_Buckeye`
+`#newtoOSU` `#osu18` `#BuckeyeNation` `@OhioUnion` `@OUAB` `@OSUCrush` `@BuckeyeCrushes` `@TBDBITL` `@FakeUrban` `@TheFakeLantern` `@Brutus_Buckeye`
 
 ## Getting Ratchet Levels: Keywords
 `turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo` 
