@@ -3,7 +3,7 @@ OSURatchetMeter
 
 The OSU Ratchet Meter is a measurer of the 'ratchet' levels of Ohio State students throughout the semester.
 
-Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions mostly used exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over the students' tweets over a specific semester. The number of occurences of these keywords per weekend are recorded, and a ratchet level is assigned to each weekend throughout the semester, along with a score for the semester as a whole.
+Analysis is done through Twitter searches via the Twitter API. First, a list of Ohio State students is compiled by finding recent mentions of particular keywords and account mentions mostly used exclusively by Ohio State students. Then, a search for specific 'ratchet' keywords is done over the students' tweets over a specific semester. The number of occurences of these keywords per weekend are recorded, and a ratchet level is assigned to each of the fifteen weekends throughout the semester, along with a score for the semester as a whole.
 
 ## Team Members
 - Kevin Payravi
@@ -23,7 +23,7 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 ## Identifying Students: Keywords and Mentions
 Twitter's search API is limited to tweets from the last week. In order to compile a list of students, any users mentioning one of the following OSU-related accounts or hashtags is assumed to be an OSU student.
 
-`#newtoOSU` `#osu18` `@OhioUnion` `@OUAB` `@OSUCrush`
+`#newtoOSU` `#osu18` `@OhioUnion` `@OUAB` `@OSUCrush` `@TheFakeLantern`
 
 ## Getting Ratchet Levels: Keywords
 `turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo` 
@@ -31,13 +31,13 @@ Twitter's search API is limited to tweets from the last week. In order to compil
 ##JSON Objects & Parameters
 
 ###List of JSON Arrays:
-* `sp13`: Array of Week Statistics Objects for Spring 2013.
-* `au13`: Array of Week Statistics Objects for Autumn 2013.
-* `sp14`: Array of Week Statistics Objects for Spring 2014.
-* `statistics`: Array of Semester Statistics Objects for each semester. 
+* `sp13`: Array of fifteen Week Statistics objects for Spring 2013.
+* `au13`: Array of fifteen Week Statistics objects for Autumn 2013.
+* `sp14`: Array of fifteen Week Statistics objects for Spring 2014.
+* `statistics`: Array of Semester Statistics objects for each semester. 
 
 ###Week Statistics Object Parameters
-Each of the sixteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
+Each of the fifteen objects list the week number, calculated ratchet level, and the number of occurances of keywords.
 * `weekNumberCount`: Number of the week in the semester (`1` - `16`).
 * `ratchetLevel`: Level of ratchetness during the weekend.
 * `turnupCount`: Number of occurrences during weekend.
