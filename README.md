@@ -8,7 +8,7 @@ OSURatchetMeter
 * `au13`: Array of week objects.
 * `sp14`: Array of week objects.
 
-####Week Objects List
+###Week Objects List
 * `ratchetLevelOverall`: The average ratchet level for the entire semester.
 * `ratchetLevelWeek1`: The ratchet level for weekend #1 of the semester.
 * `ratchetLevelWeek2`: The ratchet level for weekend #2 of the semester.
@@ -27,7 +27,7 @@ OSURatchetMeter
 * `ratchetLevelWeek15`: The ratchet level for weekend #15 of the semester.
 * `ratchetLevelWeek16`: The ratchet level for weekend #16 of the semester.
 
-#####Week Object Parameters
+####Week Object Parameters
 * `weekNumber`: Number of occurances.
 * `turnup`: Number of occurances.
 * `turnt`: Number of occurances.
