@@ -21,7 +21,9 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
     + Computer Science & Engineering
 
 ##Keywords and Mentions to Identify Students
-`#newtoOSU` `#osu18` `#osu17` `@OhioUnion` `@OUAB`
+Twitter's search API is limited to tweets from the last week. In order to compile a list of students, any users mentioning one of the following OSU-related accounts or hashtags is assumed to be an OSU student.
+
+`#newtoOSU` `#osu18` `@OhioUnion` `@OUAB` `@OSUCrush`
 
 ##JSON Objects & Parameters
 
