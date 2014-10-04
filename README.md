@@ -8,16 +8,16 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 ## Team Members
 - Kevin Payravi
     + The Ohio State University
-    + 2017
+    + Graduating 2017
     + Computer Science & Engineering
     + http://www.kevinpayravi.com/
 - Ben Knisley
     + The Ohio State University
-    + 2017
+    + Graduating 2017
     + Computer Science & Engineering
 - Eun-jai Kim
     + The Ohio State University
-    + 2017
+    + Graduating 2017
     + Computer Science & Engineering
 
 ##Keywords and Mentions to Identify Students
