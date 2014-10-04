@@ -23,7 +23,7 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 ## Identifying Students: Keywords and Mentions
 Twitter's search API is limited to tweets from the last week. In order to compile a list of students, any users mentioning one of the following OSU-related accounts or hashtags is assumed to be an OSU student.
 
-`#newtoOSU` `#osu18` `#BuckeyeNation` `@OhioUnion` `@OUAB` `@OSUCrush` `@TheFakeLantern` `@Brutus_Buckeye`
+`#newtoOSU` `#osu18` `#BuckeyeNation` `#MuckFichigan` `@OhioUnion` `@OUAB` `@OSUCrush` `@TheFakeLantern` `@Brutus_Buckeye`
 
 ## Getting Ratchet Levels: Keywords
 `turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo` 
