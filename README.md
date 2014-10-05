@@ -36,11 +36,11 @@ The current program is built to analyze Ohio State and University of Michigan st
 
 ## Mood Keywords
 ### Happiness
-`happy` `excited` `can't wait` `ecstatic` `glad` `:)` `:D` `happiness` `yes` `yes please` `fun` `good` `yay` `win` `laughing` `better` `love` `friends` `family` `go bucks` `easy` `happiest` `nice` `kind` `hilarious` `funny` `^^` `passed my exam` `laugh` `loving` `winning` `kindness` 
+`happy` `excited` `can't wait` `ecstatic` `glad` `:)` `:D` `happiness` `yes` `yes please` `fun` `good` `yay` `win` `laughing` `better` `love` `friends` `family` `go bucks` `easy` `happiest` `nice` `kind` `hilarious` `funny` `^^` `passed my exam` `laugh` `loving` `winning` `kindness` `;)` `:-)` `:]` `;]` `xD` 
 ### Sadness
-`sad` `miserable` `sucks` `hate` `:(` `D:` `fml` `don't like` `go away` `sadness` `shitty` `worst` `suck` `lose` `crying` `miss` `enemies` `bad` `hard` `sin` `saddest` `rude` `impolite` `stupid` `idiot` `worthless` `useless` `fat` `gross` `disgusting` `disgust` `sick` `judgement` `saddening` 
+`sad` `miserable` `sucks` `hate` `:(` `D:` `fml` `don't like` `go away` `sadness` `shitty` `worst` `suck` `lose` `crying` `miss` `enemies` `bad` `hard` `sin` `saddest` `rude` `impolite` `stupid` `idiot` `worthless` `useless` `fat` `gross` `disgusting` `disgust` `sick` `judgement` `saddening`  `;(` `:-(` `:[` `Dx` `messed up` 
 ### Stress
-`stress` `stressed` `midterm` `midterms` `homework` `finals` `exam` `exams` `job` `money` `wish` `more` `help` `procrastinate` `procrastination` `should have` `bank account` `why is this happening` `no more` `stressing` `studying` `late` 
+`stress` `stressed` `midterm` `midterms` `homework` `finals` `exam` `exams` `job` `money` `wish` `more` `help` `procrastinate` `procrastination` `should have` `bank account` `why is this happening` `no more` `stressing` `studying` `late` `stressed out` `2am` `regret` `should have not` `could have` 
 ### Ratchetness
 `turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo`
 
