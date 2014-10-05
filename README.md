@@ -13,16 +13,16 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 The current program is built to analyze Ohio State and University of Michigan students, which can easily be expanded to other schools (or other user sets).
 
 ## Team Members
-- Kevin Payravi
+- Kevin Payravi - C# (Data analysis and output)
     + The Ohio State University
     + Graduating 2017
     + Computer Science & Engineering
     + http://www.kevinpayravi.com/
-- Ben Knisley
+- Ben Knisley - Python (API calls and data collection)
     + The Ohio State University
     + Graduating 2017
     + Computer Science & Engineering
-- Eun-jai Kim
+- Eun-jai Kim - Frontend (Website design and graphics)
     + The Ohio State University
     + Graduating 2017
     + Computer Science & Engineering
