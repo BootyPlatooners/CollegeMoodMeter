@@ -32,7 +32,7 @@ The current program is built to analyze Ohio State and University of Michigan st
 `#BuckeyeNation` `@OhioUnion` `@OUAB` `@OSUCrush` `@BuckeyeCrushes` `@TBDBITL` `@FakeUrban` `@TheFakeLantern` `@Brutus_Buckeye`
 
 ### University of Michigan
-`@UMichUnions` `@UmichStudents` `@umichband` `@MMBStudents` `@UMStudentlife` `@crushes_umich`
+`@UMichUnions` `@UmichStudents` `@umichband` `@MMBStudents` `@UMStudentlife` `@crushes_umich` `@UMichGreek`
 
 ## Mood Keywords
 ### Happiness
