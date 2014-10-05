@@ -36,13 +36,13 @@ The current program is built to analyze Ohio State and University of Michigan st
 
 ## Mood Keywords
 ### Happiness
-`happy` `excited` `can't wait` `ecstatic` `glad` `:)` `:D` `happiness` `yes` `yes please` `fun` `good` `yay` `win` `laughing` `better` `love` `friends` `family` `go bucks` `easy` `happiest` `nice` `kind` `hilarious` `funny` `^^` `passed my exam` `laugh` `loving` `winning` `kindness` `;)` `:-)` `:]` `;]` `xD` 
+`happy` `excited` `ecstatic` `glad` `:)` `:D` `happiness` `yes` `fun` `good` `yay` `win` `laughing` `better` `love` `friends` `family` `easy` `happiest` `nice` `kind` `hilarious` `funny` `^^` `passed` `laugh` `loving` `winning` `kindness` `;)` `:-)` `:]` `;]` `xD` 
 ### Sadness
-`sad` `miserable` `sucks` `hate` `:(` `D:` `fml` `don't like` `go away` `sadness` `shitty` `worst` `suck` `lose` `crying` `miss` `enemies` `bad` `hard` `sin` `saddest` `rude` `impolite` `stupid` `idiot` `worthless` `useless` `fat` `gross` `disgusting` `disgust` `sick` `judgement` `saddening`  `;(` `:-(` `:[` `Dx` `messed up` 
+`sad` `miserable` `sucks` `hate` `:(` `D:` `fml` `sadness` `shitty` `worst` `suck` `lose` `crying` `miss` `enemies` `bad` `hard` `sin` `saddest` `rude` `impolite` `stupid` `idiot` `worthless` `useless` `fat` `gross` `disgusting` `disgust` `sick` `judgement` `saddening`  `;(` `:-(` `:[` `Dx` `messed up` 
 ### Stress
-`stress` `stressed` `midterm` `midterms` `homework` `finals` `exam` `exams` `job` `money` `wish` `more` `help` `procrastinate` `procrastination` `should have` `bank account` `why is this happening` `no more` `stressing` `studying` `late` `stressed out` `2am` `regret` `should have not` `could have` 
+`stress` `stressed` `midterm` `midterms` `homework` `finals` `exam` `exams` `job` `money` `wish` `more` `help` `procrastinate` `procrastination` `should've` `stressing` `studying` `late` `stressed out` `2am` `regret` `could've` 
 ### Ratchetness
-`turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking` `drunk text` `drunk texting` `laid` `yolo`
+`turnup` `turnt` `turnttt` `ratchet` `drunk` `crunk` `wasted` `blackout drunk` `blacked out` `alcohol` `booze` `beer` `smashed` `drunkatOSU` `party` `partying` `partying` `partied` `tgif` `puke` `puked` `puking`  `laid` `yolo`
 
 ## Disclaimer
 While this application is intended to give interesting insights and trends, the results of this analysis are not scientific. While a minority, some users identified as current students may be false positives, and the keywords used to gauge mood levels are not free from selection bias.
