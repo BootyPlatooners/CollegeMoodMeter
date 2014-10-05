@@ -42,7 +42,7 @@ The current program is built to analyze Ohio State and University of Michigan st
 ### Stress
 `2am` `could've` `exam` `exams` `fail` `failed` `failure` `finals` `help` `homework` `job` `late` `midterm` `midterms` `money` `more` `procrastinate` `procrastination` `regret` `should've` `stress` `stressed` `stressed` `stressing` `studying` `wish` `out`
 ### Ratchetness
-`alcohol` `beer` `blacked` `blackout` `booze` `crunk` `drunk` `drunkatOSU` `laid` `partied` `party` `partying` `puke` `puked` `puking` `ratchet` `smashed` `tgif` `turnt` `turnttt` `turnup` `wasted` `yolo` `drunk`
+`alcohol` `beer` `blacked` `blackout` `booty` `booze` `crunk` `drunk` `drunkatOSU` `laid` `partied` `party` `partying` `puke` `puked` `puking` `ratchet` `smashed` `tgif` `turnt` `turnttt` `turnup` `wasted` `yolo` `drunk`
 
 ## Disclaimer
 While this application is intended to give interesting insights and trends, the results of this analysis are not scientific. While a minority, some users identified as current students may be false positives, and the keywords used to gauge mood levels are not free from selection bias.
