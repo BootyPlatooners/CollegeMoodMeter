@@ -8,7 +8,9 @@ Welcome to College Mood Meeter: a Twitter analysis program that identifies stude
 - Stress (midterm week, anyone?)
 - School spirit
 
-Analysis is done through Twitter searches via the Twitter API. First, a list of students from each college is compiled by finding recent mentions of particular keywords and account mentions used most exclusively by current students from that particular college. The last 200 tweets for each of these users is then compiled. The most commonly occuring words are recorded, along with performing a search for specific keywords that indicate each of the four moods. Then, the number of occurences of these keywords are recorded. Using the extracted data, mood levels are assigned to each of the colleges based on the keyword occurrence counts.
+Analysis is done through Twitter searches via the Twitter API. Through a python application, a list of students from each college is compiled by finding recent mentions of particular keywords and account mentions used most exclusively by current students from that particular college. From these users, 200 of each user's latest tweets are extracted, and all words are counted. This data is then sent to a C# application in the form of raw text files, each line holding a word and the number of times it occurs.
+
+In the C# application, the raw text data is sorted and the most commonly occuring words are recorded, along with performing a search and count for specific keywords that indicate each of the four moods. Using the extracted data, mood levels are assigned to each of the colleges based on the keyword occurrence counts. Happiness and school spirit are considered positive traits, while sadness and stress are considered negative.
 
 The current program is built to analyze Ohio State and University of Michigan students, which can easily be expanded to other schools (or other user sets).
 
