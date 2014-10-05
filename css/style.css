@@ -20,7 +20,7 @@ body {
 	width: 218px; 
 	padding: 5px;
 	text-align: center;
-	border-padding: 10px;
+	border-radius: 10px;
 } 
 		
 #side .links {
@@ -30,7 +30,7 @@ body {
 	font-family: "Casual Affair"; 
 	text-align: center; 
 	margin: 2px;
-	border-padding: 10px;
+	border-radius: 10px;
 }
 		
 #main {
