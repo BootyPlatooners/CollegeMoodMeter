@@ -12,6 +12,9 @@ Analysis is done through Twitter searches via the Twitter API. First, a list of 
 
 The current program is built to analyze Ohio State and University of Michigan students, which can easily be expanded to other schools (or other user sets).
 
+## Final Result
+![college-mood-meter-result](images/final.png)
+
 ## Team Members
 - Kevin Payravi - C# (Data analysis and output)
     + The Ohio State University
