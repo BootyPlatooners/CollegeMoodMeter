@@ -36,7 +36,7 @@ The current program is built to analyze Ohio State and University of Michigan st
 
 ## Mood Keywords
 ### Happiness
-`<3` `:)` `:-)` `:]` `:D` `;)` `;]` `^^` `better` `easy` `ecstatic` `excited` `family` `friends` `fun` `funny` `glad` `good` `happiest` `happiness` `happy` `hilarious` `kind` `kindness` `laugh` `laughing` `love` `loving` `nice` `passed` `win` `winning` `xD` `yay` `yes`
+`<3` `:)` `:-)` `:]` `:D` `;)` `;]` `^^` `better` `easy` `ecstatic` `excited` `family` `friends` `fun` `funny` `glad` `good` `happiest` `happiness` `happy` `hilarious` `kind` `kindness` `laugh` `laughing` `lol` `love` `loving` `nice` `passed` `win` `winning` `xD` `yay` `yes`
 ### Sadness
 `:(` `:-(` `:[` `;(` `bad` `crying` `D:` `depressed` `depressing` `depression` `disgust` `disgusting` `Dx` `enemies` `fat` `fml` `gross` `hard` `hate` `idiot` `impolite` `judgement` `lose` `miserable` `miss` `mistake` `rude` `sad` `saddening` `saddest` `sadness` `shitty` `sick` `sin` `stupid` `suck` `sucks` `useless` `worst` `worthless`
 ### Stress
