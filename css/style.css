@@ -3,7 +3,7 @@ body {
 }
 		
 #side {
-	background-color: #E7E7E7;
+	background-color: #3F87D8;
 	width: 230px; 
 	height: 100%; 
 	position: fixed; 
@@ -13,19 +13,14 @@ body {
 	left: 0px;
 }
 		
-#side .title {
-	font-family: "Casual Affair"; 
-	font-size: 30px;
-	text-align: center; 
-	padding: 10px; 
-}
-		
 #side .description {
 	background-color: white;
 	color: black; 
 	font-size: 12px;  
 	width: 218px; 
 	padding: 5px;
+	text-align: center;
+	border-padding: 10px;
 } 
 		
 #side .links {
@@ -34,7 +29,8 @@ body {
 	font-size: 12px; 
 	font-family: "Casual Affair"; 
 	text-align: center; 
-	margin: 2px; 
+	margin: 2px;
+	border-padding: 10px;
 }
 		
 #main {
