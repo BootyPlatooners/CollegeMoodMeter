@@ -1,0 +1,9 @@
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\bin\Debug\CollegeMoodMeter.exe.config
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.csprojResolveAssemblyReference.cache
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.Form1.resources
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.Properties.Resources.resources
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.csproj.GenerateResource.Cache
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\bin\Debug\CollegeMoodMeter.exe
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\bin\Debug\CollegeMoodMeter.pdb
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.exe
+c:\users\kayvan\documents\visual studio 2013\Projects\CollegeMoodMeter\CollegeMoodMeter\obj\Debug\CollegeMoodMeter.pdb
