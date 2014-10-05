@@ -1,7 +1,7 @@
 College Mood Meter
 ===============
 
-Welcome to College Mood Meeter: a Twitter analysis program that identifies students from particular colleges and determines the schools' overall mood levels in the following categories:
+Welcome to College Mood Meter: a Twitter analysis program that identifies students from particular colleges and determines the schools' overall mood levels in the following categories:
 
 - Happiness
 - Sadness
