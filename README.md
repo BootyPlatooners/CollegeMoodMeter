@@ -41,8 +41,7 @@ The current program is built to analyze Ohio State and University of Michigan st
 `:(` `:-(` `:[` `;(` `bad` `crying` `D:` `depressed` `depressing` `depression` `disgust` `disgusting` `Dx` `enemies` `fat` `fml` `gross` `hard` `hate` `idiot` `impolite` `judgement` `lose` `miserable` `miss` `mistake` `rude` `sad` `saddening` `saddest` `sadness` `shitty` `sick` `sin` `stupid` `suck` `sucks` `useless` `worst` `worthless`
 ### Stress
 `2am` `could've` `exam` `exams` `fail` `failed` `failure` `finals` `help` `homework` `job` `late` `midterm` `midterms` `money` `more` `procrastinate` `procrastination` `regret` `should've` `stress` `stressed` `stressed` `stressing` `studying` `wish` `out`
-### Ratchetness
-`alcohol` `beer` `blacked` `blackout` `booty` `booze` `crunk` `drunk` `drunkatOSU` `laid` `partied` `party` `partying` `puke` `puked` `puking` `ratchet` `smashed` `tgif` `turnt` `turnttt` `turnup` `wasted` `yolo` `drunk`
-
+###Spirit Levels
+`gobucks` `gored` `osufootball` `gameday` `scarletandgrey` `football` `goosu` `loveosu` `undefeated` `goblue` `gomichigan` `YES` `WON` `iloveosu` `bestcollege` `coolestcollege` `brutus` `buckeye` `buckeyebrutus` `biff` `wolverine` `red` `blue` 
 ## Disclaimer
 While this application is intended to give interesting insights and trends, the results of this analysis are not scientific. While a minority, some users identified as current students may be false positives, and the keywords used to gauge mood levels are not free from selection bias.
