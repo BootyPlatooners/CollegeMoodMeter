@@ -1,4 +1,11 @@
-﻿using System;
+﻿//-------------------------------------------------------------------------------------------//
+// This program takes data files provided by the Python application, analyzes it,
+// and outputs it to a static HTML webpage.
+//
+// Author: Kevin Payravi (http://www.kevinpayravi.com/)
+//-------------------------------------------------------------------------------------------//
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,36 +14,64 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CollegeMoodMeter
 {
     public partial class Main : Form
     {
+        string path = "C:\\Users\\Kayvan\\Desktop\\index.html";
+
         public Main()
         {
             InitializeComponent();
-
+         
+            // Output HTML header:
             outputHeader();
 
-            string wordFileOSU = "?";
-            string wordFileUM = "?";
+            // Instantiate links to data files outputted to GitHub by Python program:
+            string wordFileOSU = "C:\\Users\\Kayvan\\Desktop\\Osu.txt";
+            string wordFileUM = "C:\\Users\\Kayvan\\Desktop\\Mich.txt";
 
+            // Instantiate constant keywords for mood categories; customized school spirit keywords are below.
+            string[] happiness = { "<3", ":)", ":-)", ":]", ":D", ";)", ";]", "^^", "better", "easy", "ecstatic", "excited", "family", "friends", "fun", "funny", "glad", "good", "happiest", "happiness", "happy", "hilarious", "kind", "kindness", "laugh", "laughing", "lol", "love", "loving", "nice", "passed", "win", "winning", "xD", "yay", "yes" };
+            string[] sadness = { ":(", ":-(", ":[", ";(", "bad", "crying", "D:", "depressed", "depressing", "depression", "disgust", "disgusting", "Dx", "enemies", "fat", "fml", "gross", "hard", "hate", "idiot", "impolite", "judgement", "lose", "miserable", "miss", "mistake", "rude", "sad", "saddening", "saddest", "sadness", "shitty", "sick", "sin", "stupid", "suck", "sucks", "useless", "worst", "worthless" };
+            string[] stress = { "2am", "could've", "exam", "exams", "fail", "failed", "failure", "finals", "help", "homework", "job", "late", "midterm", "midterms", "money", "more", "procrastinate", "procrastination", "regret", "should've", "stress", "stressed", "stressed", "stressing", "studying", "wish" };
+
+            //-------------------------------------------------------------------------------------------//
+            // ADDING/CHANGING SCHOOLS? The only code that needs to be edited is below.
+            //-------------------------------------------------------------------------------------------//
+
+            // Process Ohio State data:
             Dictionary<string, int> wordDictionaryOSU = new Dictionary<string, int>();
             wordDictionaryOSU = readFile(wordFileOSU, wordDictionaryOSU);
             string[] topWordsOSU = topWords(wordDictionaryOSU);
-            int[] scoresOSU = scorer("OSU", wordDictionaryOSU);
-            outputSchoolStats("Ohio State University", scoresOSU[0], scoresOSU[1], scoresOSU[2], scoresOSU[3], topWordsOSU);
+            int[] topWordsCountsOSU = topWordsCounts(wordDictionaryOSU);
+            string[] spiritOSU = { "bestcollege", "coolestcollege", "football", "gameday", "gored", "undefeated", "brutus", "buckeye", "buckeyes", "buckeyebrutus", "gobucks", "goosu", "iloveosu", "loveosu", "osufootball", "scarletandgray", "scarletandgrey" };
+            int[] scoresOSU = scorer("OSU", wordDictionaryOSU, happiness, sadness, stress, spiritOSU);
+            outputSchoolStats("Ohio State University", scoresOSU[0], scoresOSU[1], scoresOSU[2], scoresOSU[3], topWordsOSU, topWordsCountsOSU);
 
+            // Process Michigan data:
             Dictionary<string, int> wordDictionaryUM = new Dictionary<string, int>();
             wordDictionaryUM = readFile(wordFileUM, wordDictionaryUM);
             string[] topWordsUM = topWords(wordDictionaryUM);
-            int[] scoresUM = scorer("OSU", wordDictionaryUM);
-            outputSchoolStats("University of Michigan", scoresOSU[0], scoresOSU[1], scoresOSU[2], scoresOSU[3], topWordsUM);
+            int[] topWordsCountsUM = topWordsCounts(wordDictionaryUM);
+            string[] spiritUM = { "bestcollege", "coolestcollege", "football", "gameday", "gored", "undefeated", "biff", "chadtough", "gobigblue", "goblue", "gomichigan", "wolverine", "wolverines" };
+            int[] scoresUM = scorer("UM", wordDictionaryUM, happiness, sadness, stress, spiritUM);
+            outputSchoolStats("University of Michigan", scoresUM[0], scoresUM[1], scoresUM[2], scoresUM[3], topWordsUM, topWordsCountsUM);
 
+            //-------------------------------------------------------------------------------------------//
+            // ADDING/CHANGING SCHOOLS? The only code that needs to be edited is above.
+            //-------------------------------------------------------------------------------------------//
+
+            // Output HTML footer:
             outputFooter();
 
         }
 
+        //-------------------------------------------------------------------------------------------//
+        // readFile: Take 
+        //-------------------------------------------------------------------------------------------//
         private Dictionary<String, int> readFile(string fileName, Dictionary<String, int> wordDictionary)
         {
             // Instantiate variables:
@@ -53,7 +88,10 @@ namespace CollegeMoodMeter
                 string countString = line.Substring(line.IndexOf(" ") + 1).Trim();
                 int count = Convert.ToInt32(countString);
 
-                wordDictionary.Add(word, count);
+                if (word.Length > 2 && !word.Equals("the") && !word.Equals("they") && !word.Equals("not") && !word.Equals("some") && !word.Equals("did") && !word.Equals("his") && !word.Equals("her") && !word.Equals("has") && !word.Equals("but") && !word.Equals("how") && !word.Equals("who") && !word.Equals("too") && !word.Equals("w/") && !word.Equals("you") && !word.Equals("him") && !word.Equals("her") && !word.Equals("these") && !word.Equals("those") && !word.Equals("that") && !word.Equals("and") && !word.Equals("for") && !word.Equals("this") && !word.Equals("with") && !word.Equals("when") && !word.Equals("your") && !word.Equals("you're") && !word.Equals("what") && !word.Equals("just") && !word.Equals("youre") && !word.Equals("are") && !word.Equals("your") && !word.Equals("from") && !word.Equals("all") && !word.Equals("get") && !word.Equals("one") && !word.Equals("can") && !word.Equals("have") && !word.Equals("was") && !word.Equals("its") && !word.Equals("out"))
+                {
+                    wordDictionary.Add(word, count);
+                }
             }
 
             // Sort dictionary in descending order by value:
@@ -62,27 +100,34 @@ namespace CollegeMoodMeter
             return wordDictionary;
         }
 
+
         private string[] topWords(Dictionary<String, int> wordDictionary)
         {
             // Define temporary dictionary:
             Dictionary<string, int> temp = new Dictionary<string, int>();
 
             // Grab top 5 words, place into temporary dictionary, and put into array:
-            temp = wordDictionary.Take(5).ToDictionary(pair => pair.Key, pair => pair.Value);
+            temp = wordDictionary.Take(10).ToDictionary(pair => pair.Key, pair => pair.Value);
             string[] topWords = temp.Keys.ToArray();
 
             return topWords;
         }
 
-        private int[] scorer(string school, Dictionary<String, int> wordDictionary)
+        private int[] topWordsCounts(Dictionary<String, int> wordDictionary)
         {
-            string[] happiness = { "<3", ":)", ":-)", ":]", ":D", ";)", ";]", "^^", "better", "easy", "ecstatic", "excited", "family", "friends", "fun", "funny", "glad", "good", "happiest", "happiness", "happy", "hilarious", "kind", "kindness", "laugh", "laughing", "lol", "love", "loving", "nice", "passed", "win", "winning", "xD", "yay", "yes" };
-            string[] sadness = { ":(", ":-(", ":[", ";(", "bad", "crying", "D:", "depressed", "depressing", "depression", "disgust", "disgusting", "Dx", "enemies", "fat", "fml", "gross", "hard", "hate", "idiot", "impolite", "judgement", "lose", "miserable", "miss", "mistake", "rude", "sad", "saddening", "saddest", "sadness", "shitty", "sick", "sin", "stupid", "suck", "sucks", "useless", "worst", "worthless" };
-            string[] stress = { "2am", "could've", "exam", "exams", "fail", "failed", "failure", "finals", "help", "homework", "job", "late", "midterm", "midterms", "money", "more", "procrastinate", "procrastination", "regret", "should've", "stress", "stressed", "stressed", "stressing", "studying", "wish" };
-            string[] spiritOSU = { "bestcollege", "coolestcollege", "football", "gameday", "gored", "undefeated", "brutus", "buckeye", "buckeyes", "buckeyebrutus", "gobucks", "goosu", "iloveosu", "loveosu", "osufootball", "scarletandgray", "scarletandgrey" };
-            string[] spiritUM = { "bestcollege", "coolestcollege", "football", "gameday", "gored", "undefeated", "biff", "chadtough", "gobigblue", "goblue", "gomichigan", "wolverine", "wolverines" };
+            // Define temporary dictionary:
+            Dictionary<string, int> temp = new Dictionary<string, int>();
 
-            int happinessScore = 0;
+            // Grab top 10 words, place into temporary dictionary, and put into array:
+            temp = wordDictionary.Take(10).ToDictionary(pair => pair.Key, pair => pair.Value);
+            int[] topWords = temp.Values.ToArray();
+
+            return topWords;
+        }
+
+        private int[] scorer(string school, Dictionary<String, int> wordDictionary, string[] happiness, string[] sadness, string[] stress, string[] spirit)
+        {
+            double happinessScore = 0.0;
             for (int i = 0; i < happiness.Length; i++)
             {
                 if (wordDictionary.ContainsKey(happiness[i]))
@@ -93,7 +138,7 @@ namespace CollegeMoodMeter
                 }
             }
 
-            int sadnessScore = 0;
+            double sadnessScore = 0.0;
             for (int i = 0; i < sadness.Length; i++)
             {
                 if (wordDictionary.ContainsKey(sadness[i]))
@@ -104,7 +149,7 @@ namespace CollegeMoodMeter
                 }
             }
 
-            int stressScore = 0;
+            double stressScore = 0.0;
             for (int i = 0; i < stress.Length; i++)
             {
                 if (wordDictionary.ContainsKey(stress[i]))
@@ -115,41 +160,39 @@ namespace CollegeMoodMeter
                 }
             }
 
-            int spiritScore = 0;
-
-            if(school.Equals("OSU")){
-                for (int i = 0; i < spiritOSU.Length; i++)
+            double spiritScore = 0.0;
+            for (int i = 0; i < spirit.Length; i++)
+            {
+                if (wordDictionary.ContainsKey(spirit[i]))
                 {
-                    if (wordDictionary.ContainsKey(spiritOSU[i]))
-                    {
-                        int val = 0;
-                        wordDictionary.TryGetValue(spiritOSU[i], out val);
-                        spiritScore += val;
-                    }
-                }
-            }
-            if(school.Equals("UM")){
-                for (int i = 0; i < spiritUM.Length; i++)
-                {
-                    if (wordDictionary.ContainsKey(spiritUM[i]))
-                    {
-                        int val = 0;
-                        wordDictionary.TryGetValue(spiritUM[i], out val);
-                        spiritScore += val;
-                    }
+                    int val = 0;
+                    wordDictionary.TryGetValue(spirit[i], out val);
+                    spiritScore += (double)val;
                 }
             }
 
-            int[] scores = { happinessScore, sadnessScore, stressScore, spiritScore };
+            int numWords = wordDictionary.Count();
+            int happinessScoreFinal = (int)Math.Truncate((happinessScore / numWords) * 1000);
+            int sadnessScoreFinal = (int)Math.Truncate((sadnessScore / numWords) * 1000);
+            int stressScoreFinal = (int)Math.Truncate((stressScore / numWords) * 1000);
+            int spiritScoreFinal = (int)Math.Truncate((spiritScore / numWords) * 1000);
+
+            int[] scores = { happinessScoreFinal, sadnessScoreFinal, stressScoreFinal, spiritScoreFinal };
+
             return scores;
         }
 
         private void outputHeader()
         {
+            string urlStyle = "https://raw.githubusercontent.com/OHIOhackathon2014/CollegeMoodMeter/master/css/style.css";
+            string urlOSU = "https://raw.githubusercontent.com/OHIOhackathon2014/CollegeMoodMeter/master/images/osu.gif";
+            string urlLogo = "https://raw.githubusercontent.com/OHIOhackathon2014/CollegeMoodMeter/master/images/logo.png";
+            string urlMich = "https://raw.githubusercontent.com/OHIOhackathon2014/CollegeMoodMeter/master/images/mich.gif";
+            
             string[] outputCodeHeader = { "<!DOCTYPE html>",
                                        "<html lang=\"en\">",
                                        "<head>",
-                                       "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githubusercontent.com/OHIOhackathon2014/CollegeMoodMeter/master/css/style.css?token=7636606__eyJzY29wZSI6IlJhd0Jsb2I6T0hJT2hhY2thdGhvbjIwMTQvQ29sbGVnZU1vb2RNZXRlci9tYXN0ZXIvY3NzL3N0eWxlLmNzcyIsImV4cGlyZXMiOjE0MTMwNzk5Nzd9--5712ddcefd81e818b13d1fd6ace9249a2365b881\">",
+                                       "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + urlStyle + "\">",
                                        "</head>",
                                        "<body>",
                                        "<div id = \"side\"> ",
@@ -160,14 +203,20 @@ namespace CollegeMoodMeter
                                        "<br>",
                                        "<a href = \"URL\"><div class = \"links\">GitHub Repo</div></a>",
                                        "</div>",
-                                       "<div id = \"main\">"};
+                                       "<div id = \"main\">",
+                                       "<img src=\"" + urlOSU + "\" width=\"200px\">",
+                                       "<img src=\"" + urlLogo + "\" width=\"360px\">",
+                                       "<img src=\"" + urlMich + "\" width=\"200px\">",
+                                       };
+
+            File.WriteAllLines(path, outputCodeHeader, Encoding.UTF8);
             
         }
 
-        private void outputSchoolStats(string school, int happinessScore, int sadnessScore, int stressScore, int spiritScore, string[] topWords)
+        private void outputSchoolStats(string school, int happinessScore, int sadnessScore, int stressScore, int spiritScore, string[] topWords, int[] topWordsCounts)
         {
-            string[] outputCodeStats = { "<div class = \"title\">" + school + "</div>",
-                                       "<br>",
+            string[] outputCodeStats = { "<br><br><br>",
+                                       "<div class = \"title\">" + school + "</div>",
                                        "<font style=\"font-size: 20px;\">Scores</font>",
                                        "<br>",
                                        "Happiness - " + happinessScore + "<br>",
@@ -177,7 +226,9 @@ namespace CollegeMoodMeter
                                        "<br>",
                                        "<font style=\"font-size: 20px;\">Top Keywords</font>",
                                        "<br>",
-                                       topWords[0] + " - " + topWords[1] + " - " + topWords[2] + " - " + topWords[3] + " - " + topWords[4] + " - " + topWords[5]};
+                                       topWords[0] + " <font size=\"2\">(" + topWordsCounts[0] + ")</font> • " +  topWords[1] + " <font size=\"2\">(" + topWordsCounts[1] + ")</font> • " +  topWords[2] + " <font size=\"2\">(" + topWordsCounts[2] + ")</font> • " +  topWords[3] + " <font size=\"2\">(" + topWordsCounts[3] + ")</font><br>" +  topWords[4] + " <font size=\"2\">(" + topWordsCounts[4] + ")</font> • " +  topWords[5] + " <font size=\"2\">(" + topWordsCounts[5] + ")</font> • " +  topWords[6] + " <font size=\"2\">(" + topWordsCounts[6] + ")</font> • " +  topWords[7] + " <font size=\"2\">(" + topWordsCounts[7] + ")</font> • " +  topWords[8] + " <font size=\"2\">(" + topWordsCounts[8] + ")</font> • " +  topWords[9] + " <font size=\"2\">(" + topWordsCounts[9] + ")</font>"};
+
+            File.AppendAllLines(path, outputCodeStats, Encoding.UTF8);
         }
 
         private void outputFooter()
@@ -186,8 +237,7 @@ namespace CollegeMoodMeter
                                        "</body>",
                                        "</html>"};
 
+            File.AppendAllLines(path, outputCodeFooter, Encoding.UTF8);
         }
-
-
     }
 }
