@@ -6,7 +6,7 @@ Welcome to College Mood Meeter: a Twitter analysis program that identifies stude
 - Happiness
 - Sadness
 - Stress (midterm week, anyone?)
-- Ratchetness (how fun, rowdy, and debaucherous students can be)
+- School spirit
 
 Analysis is done through Twitter searches via the Twitter API. First, a list of students from each college is compiled by finding recent mentions of particular keywords and account mentions used most exclusively by current students from that particular college. The last 200 tweets for each of these users is then compiled. The most commonly occuring words are recorded, along with performing a search for specific keywords that indicate each of the four moods. Then, the number of occurences of these keywords are recorded. Using the extracted data, mood levels are assigned to each of the colleges based on the keyword occurrence counts.
 
